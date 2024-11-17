@@ -1,9 +1,12 @@
 {
-  "name": "code-gen",
+  "name": "code-gen-cmd",
   "version": "0.0.1",
   "description": "",
   "bin": {
     "code-gen": "./dist/index.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "type": "module",
   "scripts": {
