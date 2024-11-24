@@ -1,0 +1,28 @@
+{
+  "name": "code-gen-bin",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "bin": {
+    "code-gen": "./dist/index.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild  --stub"
+  },
+  "keywords": [],
+  "files": [
+    "dist"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "unbuild": "^2.0.0"
+  },
+  "dependencies": {
+    "@code-gen-bin/commands": "workspace:*"
+  }
+}

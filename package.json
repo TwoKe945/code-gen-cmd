@@ -1,36 +1,31 @@
 {
-  "name": "code-gen-cmd",
+  "name": "code-gen-bin-workspace",
   "version": "0.0.1",
   "description": "",
-  "bin": {
-    "code-gen": "./dist/index.mjs"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "type": "module",
+  "private": true,
   "scripts": {
-    "build": "unbuild",
-    "stub": "unbuild  --stub",
-    "release": "release-it"
+    "build": "pnpm -F code-gen-bin build",
+    "stub": "pnpm -F code-gen-bin stub"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^28.0.1",
-    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@types/ejs": "^3.1.5",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^22.9.0",
-    "release-it": "^17.10.0",
-    "typescript": "^5.6.3",
-    "unbuild": "^2.0.0"
+    "typescript": "^5.6.3"
   },
   "dependencies": {
+    "@code-gen-bin/shared": "workspace:*",
+    "@code-gen-bin/template": "workspace:*",
+    "@code-gen-bin/commands": "workspace:*",
     "axios": "^1.7.7",
     "chalk": "^5.3.0",
     "commander": "^12.1.0",
+    "ejs": "^3.1.10",
     "fs-extra": "^11.2.0",
-    "inquirer": "^12.1.0"
+    "inquirer": "^12.1.0",
+    "java-parser": "^2.3.2"
   }
 }

@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { getConfig, exitsConfig } from '../utils'
+import { getConfig, exitsConfig } from '../config'
 import { cwd } from 'process'
 
 const instance = axios.create({

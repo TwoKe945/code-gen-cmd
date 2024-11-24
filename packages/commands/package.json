@@ -1,0 +1,19 @@
+{
+  "name": "@code-gen-bin/commands",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0"
+  }
+}
